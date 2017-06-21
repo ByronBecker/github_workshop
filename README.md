@@ -102,7 +102,7 @@ When do I use Forking?
 
 When do I branch?
     
-    [![GitHub Visualization](http://www.bloggingpro.com/wp-content/uploads/lussumo-github-network-graph.jpg)
+[![GitHub Visualization](http://www.bloggingpro.com/wp-content/uploads/lussumo-github-network-graph.jpg)
 
     - Branching allows for a team of developers to work on specific parts of a codebase
     - Developers can switch between different parts easily, and not be as tentative to commit different ideas since master is unaffected
