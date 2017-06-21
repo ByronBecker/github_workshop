@@ -26,12 +26,17 @@
 5. Back in the terminal, type git clone paste_of_link_you_just_copied          
 This should clone a copy of the repository as a folder titled github_workshop to your Desktop
 6. Now change directory into github_workshop. Experiment with the following commands, what do you think each does?
-    a) git status
-    b) git pull origin master
-    c) git push origin master
-    d) git remote -v
 
-*7. ****Now open up hellopython.py in your favorite text editor, and add the following line somewhere:    print("I just changed this file") 
+    a) git status  
+
+    b) git pull origin master  
+
+    c) git push origin master  
+
+    d) git remote -v  
+
+*7. ****Now open up hellopython.py in your favorite text editor, and add the following line somewhere:    print("I just changed this file")
+
     - repeat step 6 (Note: you WILL get errors for each, why do you think so?)
 
 After changing any files in the repository, you have to do the following steps.
