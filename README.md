@@ -9,8 +9,9 @@
 ### What is GitHub and how does GitHub work
 
 ####History
-* GitHub is a version control system for tracking changes in computer files and coordinating work on those files among multiple people
-* Was created in 2005 for development of the Linux kernel, but unlike the linux kernel, it is FREE
+* Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people
+* Git created in 2005 for development of the Linux kernel, and like the linux kernel, it is FREE. GitHub was launched 3 years later in 2008
+* GitHub is a web-based Git or version control repository and Internet hosting service.
 
 ####How it works
 
@@ -108,7 +109,7 @@ git checkout -- name of file => this will reset a particular file to the last lo
 
 ### Forking vs Branching
 
-When do I use Forking?
+When do I fork?
 
 * We started off this workshop by forking a repository. Forking allows someone to make a personal copy of a particular repository belonging to another person or organization. Merging your changes back into the master copy is done via a pull request and generally has to be approved by the person/organization first. One will generally fork a repository in open source development, where one has to be careful with the code they allow to be commited. 
 
