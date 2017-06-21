@@ -91,12 +91,37 @@ What happens if just commited some changes and pushed them, and then worked for 
 
 git reset --hard   => this resets any and all changes in the working tree since the last commit
 
+git checkout -- name of file => this will reset a particular file to the last local commit 
+
+
+### Forking vs Branching
+
+When do I use Forking?
+
+    - We started off this workshop by forking a repository. Forking allows someone to make a personal copy of a particular repository belonging to another person or organization. Merging your changes back into the master copy is done via a pull request and generally has to be approved by the person/organization first. One will generally fork a repository in open source development, where one has to be careful with the code they allow to be commited. 
+
+When do I branch?
+    
+    [![GitHub Visualization](http://www.bloggingpro.com/wp-content/uploads/lussumo-github-network-graph.jpg)
+
+    - Branching allows for a team of developers to work on specific parts of a codebase
+    - Developers can switch between different parts easily, and not be as tentative to commit different ideas since master is unaffected
+    - Developers can work on branches together more easily, whereas forks are more personal
+    - Branches can be merged into master via a pull request when the branch is ready
 
 
 ### GitHub Etiquette
 
+For those who plan on using GitHub as a tool in future group projects, here are some things to make it easier for you, and to make sure your teammates like you!
+
+
+    a) Git Pull from the branch you are working on when there is a change in its remote copy! This will help you deal with merge conflicts right away, and before things get messy.
+    b) Let others know when you push a change, or set up a system where everyone receives notifications so part a) is easy
+    c) Don't approve your own pull requests without getting a team member's approval (no one likes getting their code overwritten without knowing about it)
+    d) Commit locally often, and push those changes. If you were writing an essay, think of commits as adding a thesis statement or editing grammatical errors. If you were working on that essay with others, you want them to know as soon as you make those edits!
+    e) Keep master functional! Branch, branch, branch! - Master should always be functional, get the kinks out for specific features in the branches, test them out, and only then pull request a merge into master.
 
 
 
 
-### Forking vs Branching
+
