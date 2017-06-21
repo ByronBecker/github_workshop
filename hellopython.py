@@ -1,5 +1,6 @@
 
 
-print("Hello World")
-print("I just changed this file")
+print("Hello Helsinki")
+
 print("hi mom")
+print("Hello Python")
