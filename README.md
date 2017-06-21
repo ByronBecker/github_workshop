@@ -31,7 +31,7 @@
 This should clone a copy of the repository as a folder titled github_workshop to your Desktop
 6. Now change directory into github_workshop. Experiment with the following commands, what do you think each does?
     a) git status
-    b) git pull
+    b) git pull origin master
     c) git push origin master
     d) git remote -v
 
@@ -39,24 +39,63 @@ This should clone a copy of the repository as a folder titled github_workshop to
     - repeat step 6 (Note: you WILL get errors for each, why do you think so?)
 
 After changing any files in the repository, you have to do the following steps.
+    recommended (optional) first step: git status to check what has changed since the last commit
     i) git add (name of file that was changed)
     ii) git commit -m "insert descriptive message here of what you changed/added"
     iii) git push origin master   (this is the default name of your fork)
     
 
-### Clearing Unwanted Changes
-
-
-
 ### Resolving Merge Conflicts!
 
+* A merge conflict is when the git system doesn't know what to do with two different versions of the same file where certain parts have been overwritten, how does the computer decide who is right? => Merge conflict
+* This can be one of the most frustrating parts of GitHub!
+* We are going to now create a merge conflict and resolve it!
+
+1. Go to the hellopython.py file in the browser and edit it as I do  !!! Never edit files directly in the browser other than for this example !!!
+2. Now go to your hellopython.py file on your computer, and add the line: print("Changing the file")
+3. Now go through steps 7i - 7iii of Getting started, it should return the following
+        ! [rejected]        master -> master (fetch first)
+        error: failed to push some refs to 'git@github.com:ByronBecker/github_workshop.git'
+        hint: Updates were rejected because the remote contains work that you do
+        hint: not have locally. This is usually caused by another repository pushing
+        hint: to the same ref. You may want to first integrate the remote changes
+        hint: (e.g., 'git pull ...') before pushing again.
+        hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+    - From the message, what do you think we should try next?
+
+5. If you said "git pull origin master", you were right, try that...
+
+    - we now have our Merge conflict => GitHub wants YOU to be the fixer and decide which lines to keep, and which to throw out
+
+6. Open up hellopython.py in your text editor, you should see something like this
+
+    <<<<<<< HEAD
+  print("Hello World")
+  print("Changing the file")
+  =======
+  print("I created chaos")
+  print("Helsinki World")
+  >>>>>>> 6480f217bb9413dd62753f3efb50b60e819c5f9f
+
+  - the <<<< HEAD to ==== represents your copy of what you were just about to push, and the ===== to >>>>>> represents what was stored in the last commit (number of commit) on your remote repository.  
+
+7. fix your code so it contains what you want, make sure to delete the <<<HEAD, ===, and >>>commit number, and then save the file
+
+8. Type git status. Now what do you think you need to do now to commit the change and push it to your remote?
 
 
+### Clearing Unwanted Changes
 
+What happens if just commited some changes and pushed them, and then worked for about 30 minutes on something you really don't like anymore. You want to revert to the last commited copy of your files
+
+git reset --hard   => this resets any and all changes in the working tree since the last commit
 
 
 
 ### GitHub Etiquette
+
+
 
 
 
