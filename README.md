@@ -40,9 +40,13 @@ This should clone a copy of the repository as a folder titled github_workshop to
     - repeat step 6 (Note: you WILL get errors for each, why do you think so?)
 
 After changing any files in the repository, you have to do the following steps.
-    recommended (optional) first step: git status to check what has changed since the last commit 
+
+    recommended (optional) first step: git status to check what has changed since the last commit  
+
     i) git add (name of file that was changed) 
-    ii) git commit -m "insert descriptive message here of what you changed/added" 
+
+    ii) git commit -m "insert descriptive message here of what you changed/added"  
+
     iii) git push origin master   (this is the default name of your fork) 
     
 
@@ -72,12 +76,18 @@ After changing any files in the repository, you have to do the following steps.
 
 6. Open up hellopython.py in your text editor, you should see something like this
 
-    <<<<<<< HEAD 
+    <<<<<<< HEAD
+
   print("Hello World") 
+
   print("Changing the file") 
+
   ======= 
+
   print("I created chaos") 
+
   print("Helsinki World") 
+
   >>>>>>> 6480f217bb9413dd62753f3efb50b60e819c5f9f 
 
   - the <<<< HEAD to ==== represents your copy of what you were just about to push, and the ===== to >>>>>> represents what was stored in the last commit (number of commit) on your remote repository.  
