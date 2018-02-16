@@ -89,7 +89,7 @@ After changing any files in the repository, you have to do the following steps.
 
   print("Helsinki World") 
 
-  >>>>>>> 6480f217bb9413dd62753f3efb50b60e819c5f9f 
+  \>>>>>> 6480f217bb9413dd62753f3efb50b60e819c5f9f 
 
   - the <<<< HEAD to ==== represents your copy of what you were just about to push, and the ===== to >>>>>> represents what was stored in the last commit (number of commit) on your remote repository.  
 
